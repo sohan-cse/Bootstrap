@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Tutorial</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .cheight{
+            height: 80vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+    <body >
+        <!-- ---------------------------------------- -->
+        <!-- -------------Navbar--------------------- -->
+        <!-- ---------------------------------------- -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #b1daf8;" data-bs-theme="light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1"> 
+                    <img src="/images/flogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Farmer's Home
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 h6">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                        <ul class="dropdown-menu " style="background-color: #b1daf8;">
+                            <li><a class="dropdown-item"  href="#">খেজুর গুড়</a></li>
+                            <li><a class="dropdown-item"  href="#">আখের গুড়</a></li>
+                            <li><a class="dropdown-item"  href="#">মধু</a></li>
+                            <li><a class="dropdown-item"  href="#">খেজুর</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item"  href="#">অন্যান্য</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        LogIn
+                    </a>
+                    <ul class="dropdown-menu " style="background-color: #b1daf8;">
+                        <li><a class="dropdown-item"  href="#">Admin</a></li>
+                        <li><a class="dropdown-item"  href="#">User</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------------------- -->
+        <!-- -------------Carousel------------------- -->
+        <!-- ---------------------------------------- -->
+         <div class="container bg-body-secondary">
+
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+            <div class="carousel-inner h3">
+                <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/images/khejur1.png" class="d-block cheight" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>খেজুর গুড়</h5>
+                    <p>সেরা স্বাদে,সেরা মানে...আমরাই সেরা</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="/images/khejur2.png" class="d-block cheight" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>খেজুর গুড়</h5>
+                    <p>সেরা স্বাদে,সেরা মানে...আমরাই সেরা</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="/images/khejur3.png" class="d-block cheight" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>খেজুর গুড়</h5>
+                    <p>সেরা স্বাদে,সেরা মানে...আমরাই সেরা</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="/images//khejur4.png" class="d-block cheight" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>খেজুর গুড়</h5>
+                    <p>সেরা স্বাদে,সেরা মানে...আমরাই সেরা</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="/images/khejur5.png" class="d-block cheight" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>খেজুর গুড়</h5>
+                    <p>সেরা স্বাদে,সেরা মানে...আমরাই সেরা</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+         </div>
+
+        <!-- ---------------------------------------- -->
+        <!-- -------------Carousel------------------- -->
+        <!-- ---------------------------------------- -->
+         <div class="text-center">
+            <h1>Products</h1>
+         </div>
+         <div class="container-fluid ">
+            <div class="row g-2">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/khejur1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">সিলিন্ডার পাটালি</h5>
+                            <p class="card-text">খেজুর গুড়ের সেরা স্বাদে ,আমরা আছি আপনার সাথে।</p>
+                            <a href="#" class="btn btn-primary">অর্ডার করুন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/khejur2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">স্কয়ার পাটালি</h5>
+                            <p class="card-text">খেজুর গুড়ের সেরা স্বাদে ,আমরা আছি আপনার সাথে।</p>
+                            <a href="#" class="btn btn-primary">অর্ডার করুন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/khejur3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">দানাগুড়</h5>
+                            <p class="card-text">খেজুর গুড়ের সেরা স্বাদে ,আমরা আছি আপনার সাথে।</p>
+                            <a href="#" class="btn btn-primary">অর্ডার করুন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/khejur4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">গোল পাটালি</h5>
+                            <p class="card-text">খেজুর গুড়ের সেরা স্বাদে ,আমরা আছি আপনার সাথে।</p>
+                            <a href="#" class="btn btn-primary">অর্ডার করুন</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </body>
+</html>
