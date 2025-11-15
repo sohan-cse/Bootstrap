@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Dropdown Demo</title>
+    <style>
+        body {
+            height: 100vh; 
+        }
+    </style>
+</head>
+    <body>
+        <div class="dropdown m-2">
+            <button class="btn btn-primary dropdown-toggle  btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User
+            </button>
+            <ul class="dropdown-menu" style="background-color: rgb(92, 192, 255);">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Apply for event schedule</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+        <!-- Example single danger button -->
+        <div class="btn-group">
+        <button type="button  btn-sm" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Gandu
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+        </div>
+
+        <!-- Example split danger button -->
+        <div class="btn-group">
+            <button type="button  btn-lg" class="btn btn-warning">Admin</button>
+            <button type="button  " class="btn  btn-lg btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">LogIn</a></li>
+                <li><a class="dropdown-item" href="#">LogOut</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Total Events</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

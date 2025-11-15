@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Collapse Demo</title>
+    <style>
+        body {
+            height: 100vh; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-3 bg-body-secondary">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Admindiv" area-expanded="false" area-controls="Admindiv">Admin</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Userdiv" area-expanded="false" area-controls="Userdiv">User</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".AUdiv" area-expanded="false" area-controls=" Admindiv Userdiv">Both</button>
+        <div class="row">
+            <div class="col">
+                <div class="collapse AUdiv" id="Admindiv">
+                    <div class="card card-body m-2">
+                        <h2>Admin</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste modi impedit ut error dolorum voluptas quisquam id repellendus cum aut, amet suscipit corporis magni dolores laudantium facilis tempora obcaecati veritatis.</p>  
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse AUdiv" id="Userdiv">
+                    <div class="card card-body m-2">
+                        <h2>User</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis hic repudiandae recusandae autem, voluptate dolores soluta minima quae iste at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
