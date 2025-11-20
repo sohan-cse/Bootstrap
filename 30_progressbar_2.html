@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Demo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1 class="text-center">Farmar's Home</h1>
+    <hr>
+    <label class="form-label">Enter value(0-100)</label>
+    <input type="text" class="form-control" name="val" id="val">
+    <button type="button" class="btn btn-primary my-2" id="btn">set value</button>
+    <div class="progress" role="progressbar"  aria-label="Success example" id="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar text-bg-success" id="progress-bar" style="width: 25%">25%</div>
+    </div>
+</body>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            var value=parseInt(document.getElementById("val").value);
+            document.getElementById("progressbar").setAttribute("aria-valuenow",value);
+            document.getElementById("progress-bar").style.width=value+"%";
+            document.getElementById("progress-bar").innerText=value+"%";
+        });
+    </script>
+</html>
